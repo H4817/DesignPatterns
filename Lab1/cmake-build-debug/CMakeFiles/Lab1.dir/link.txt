@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/Lab1.dir/main.cpp.o CMakeFiles/Lab1.dir/Circle.cpp.o CMakeFiles/Lab1.dir/ShapesContainer.cpp.o CMakeFiles/Lab1.dir/AbstractShape.cpp.o CMakeFiles/Lab1.dir/Rectangle.cpp.o CMakeFiles/Lab1.dir/Triangle.cpp.o CMakeFiles/Lab1.dir/IOManager.cpp.o CMakeFiles/Lab1.dir/CommandHandler.cpp.o  -o Lab1 
