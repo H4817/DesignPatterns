@@ -16,6 +16,6 @@ public:
 
     virtual std::string ToString() = 0;
 
-    virtual void accept(IVisitor &v) = 0;
+    virtual double accept(IVisitor &v) = 0;
 };
 

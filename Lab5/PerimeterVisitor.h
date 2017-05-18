@@ -4,9 +4,9 @@
 
 class PerimeterVisitor : public IVisitor {
 public:
-    void visit (Circle & v) override;
-    void visit (Rectangle & v) override;
-    void visit (Triangle & v) override;
+    double visit(Circle &v) override;
+    double visit(Rectangle &v) override;
+    double visit(Triangle &v) override;
 
 };
 

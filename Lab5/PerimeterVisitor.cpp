@@ -1,13 +1,14 @@
 #include "PerimeterVisitor.h"
 
-void PerimeterVisitor::visit(Circle &v) {
-
+double PerimeterVisitor::visit(Circle &v) {
+    return 0;
 }
 
-void PerimeterVisitor::visit(Triangle &v) {
-
+double PerimeterVisitor::visit(Triangle &v) {
+    return 0;
 }
 
-void PerimeterVisitor::visit(Rectangle &v) {
+double PerimeterVisitor::visit(Rectangle &v) {
+    return (v.getWidth() + v.getHeight()) * 2;
 
 }

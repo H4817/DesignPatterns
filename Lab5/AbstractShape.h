@@ -16,6 +16,8 @@ public:
 
     virtual std::string GetClassName() const;
 
+    double accept(IVisitor &v) override;
+
 protected:
     float perimeter;
     float area;

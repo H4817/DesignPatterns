@@ -10,7 +10,7 @@ public:
 
     std::string GetClassName() const override;
 
-    void accept(IVisitor & v) override;
+    double accept(IVisitor & v) override;
 
 private:
     std::pair<int, int> center;

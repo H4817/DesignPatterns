@@ -7,8 +7,8 @@
 
 class IVisitor {
 public:
-    virtual void visit(Circle & circle) = 0;
-    virtual void visit(Rectangle & rectangle) = 0;
-    virtual void visit(Triangle & triangle) = 0;
+    virtual double visit(Circle &circle) = 0;
+    virtual double visit(Rectangle &rectangle) = 0;
+    virtual double visit(Triangle &triangle) = 0;
     virtual ~IVisitor() = default;
 };

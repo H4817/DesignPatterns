@@ -25,8 +25,8 @@ std::string Triangle::GetClassName() const {
     return "Triangle";
 }
 
-void Triangle::accept(IVisitor &v) {
-    v.visit(*this);
+double Triangle::accept(IVisitor &v) {
+    return v.visit(*this);
 }
 
 //TODO: fix area

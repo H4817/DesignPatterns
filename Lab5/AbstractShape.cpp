@@ -15,3 +15,7 @@ std::string AbstractShape::ToString() {
 std::string AbstractShape::GetClassName() const {
     return "AbstractShape";
 }
+
+double AbstractShape::accept(IVisitor &v) {
+    return 0;
+}

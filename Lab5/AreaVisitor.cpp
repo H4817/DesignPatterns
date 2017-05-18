@@ -1,14 +1,14 @@
 #include "AreaVisitor.h"
 
 
-void AreaVisitor::visit(Circle &v) {
-
+double AreaVisitor::visit(Circle &v) {
+    return 0;
 }
 
-void AreaVisitor::visit(Rectangle &v) {
-
+double AreaVisitor::visit(Rectangle &v) {
+    return 0;
 }
 
-void AreaVisitor::visit(Triangle &v) {
-
+double AreaVisitor::visit(Triangle &v) {
+    return 0;
 }

@@ -15,6 +15,6 @@ std::string Circle::GetClassName() const {
     return "Circle";
 }
 
-void Circle::accept(IVisitor &v) {
-    v.visit(*this);
+double Circle::accept(IVisitor &v) {
+    return v.visit(*this);
 }
