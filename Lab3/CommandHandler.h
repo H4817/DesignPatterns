@@ -18,8 +18,7 @@ private:
     void AppendShapes(const std::vector<std::pair<std::string, std::vector<int>>> &namesAndArguments);
 
 private:
-//    ShapesContainer shapesContainer;
-    std::vector<std::shared_ptr<AbstractShape>> m_shapes;
+    ShapesContainer shapesContainer;
     CircleFactory &circleFactory = CircleFactory::getInstance();
     TriangleFactory &triangleFactory = TriangleFactory::getInstance();
     RectangleFactory &rectangleFactory = RectangleFactory::getInstance();

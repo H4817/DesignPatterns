@@ -1,3 +1,4 @@
+#include <cmath>
 #include "Triangle.h"
 
 Triangle::Triangle(std::pair<int, int> p1, std::pair<int, int> p2, std::pair<int, int> p3) {

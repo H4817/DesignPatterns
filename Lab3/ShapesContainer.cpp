@@ -7,13 +7,8 @@ std::vector<std::shared_ptr<AbstractShape>> ShapesContainer::GetShapes() {
     return shapes;
 }
 
-void ShapesContainer::AddShape(const AbstractShape &shape) {
-    if (shape.GetClassName() == "Circle")
-        this->shapes.push_back(std::make_shared<Circle>(shape));
-    else if (shape.GetClassName() == "Triangle")
-        this->shapes.push_back(std::make_shared<Triangle>(shape));
-    else if (shape.GetClassName() == "Rectangle")
-        this->shapes.push_back(std::make_shared<Rectangle>(shape));
+void ShapesContainer::AddShape(std::shared_ptr<AbstractShape> shape) {
+        this->shapes.push_back(shape);
 }
 
 void ShapesContainer::RemoveLastOne() {

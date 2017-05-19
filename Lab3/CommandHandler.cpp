@@ -7,14 +7,11 @@ void CommandHandler::AppendShapes(const std::vector<std::pair<std::string, std::
         auto name = namesAndArguments[counter].first;
         auto arguments = namesAndArguments[counter].second;
         if (name == "CIRCLE:") {
-//            shapesContainer.AddShape(circleFactory.createShape(arguments));
-            m_shapes.push_back(circleFactory.createShape(arguments));
+            shapesContainer.AddShape(circleFactory.createShape(arguments));
         } else if (name == "RECTANGLE:") {
-//            shapesContainer.AddShape(rectangleFactory.createShape(arguments));
-            m_shapes.push_back(rectangleFactory.createShape(arguments));
+            shapesContainer.AddShape(rectangleFactory.createShape(arguments));
         } else if (name == "TRIANGLE:") {
-//            shapesContainer.AddShape(triangleFactory.createShape(arguments));
-            m_shapes.push_back(triangleFactory.createShape(arguments));
+            shapesContainer.AddShape(triangleFactory.createShape(arguments));
         }
     }
 }
@@ -39,9 +36,13 @@ void CommandHandler::ProcessInput(std::string input) {
 
 std::string CommandHandler::PrepareOutput() {
     std::string result;
-    for (int i = 0; i < m_shapes.size(); ++i) {
-        result += m_shapes[i]->ToString();
+    auto shapes = shapesContainer.GetShapes();
+    for (int i = 0; i < shapes.size(); ++i) {
+        result += shapes[i]->ToString();
     }
+//    for (int i = 0; i < m_shapes.size(); ++i) {
+//        result += m_shapes[i]->ToString();
+//    }
     return result;
 }
 

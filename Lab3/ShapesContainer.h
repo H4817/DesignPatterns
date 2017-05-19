@@ -10,7 +10,7 @@ public:
 
     void SetShapes(const std::vector<std::shared_ptr<AbstractShape>> &shapes);
 
-    void AddShape(const AbstractShape &shape);
+    void AddShape(std::shared_ptr<AbstractShape> shape);
 
     void RemoveShape(const int position);
 
